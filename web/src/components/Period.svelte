@@ -46,10 +46,7 @@
     {/each}
   {/if}
   
+  {#if item.referencedBy}
   <Cards cards={item.referencedBy} title="Relatert til" />
-
-  <pre>
-    <code>{JSON.stringify(item, null, 2)}</code>
-  </pre>
-
+  {/if}
 </main>
